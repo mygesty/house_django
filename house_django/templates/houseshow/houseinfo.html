@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ path }}</title>
+    {% for jsfile_name in script_list %}
+    <script src="{{host}}/{{jsfile_name}}.js"></script>
+    {% endfor %}
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/houseshow.css">
+</head>
+<body>
+    <div>
+        <div id="listing-filters" class="compat open" style="position: absolute;left: 0px; top: 0px; width: 60%">
+            <fieldset style="height: 36px">
+                <div class="zone links" style="height: 26px;">
+                <a class="checked">区域</a>
+                <a href="tianhe/" style="color: #ffe8fe">天河</a>
+                <a href="baiyun/" style="color: #ffe8fe">白云</a>
+                <a href="panyu/" style="color: #ffe8fe">番禺</a>
+                <a href="haizhu/" style="color: #ffe8fe">海珠</a>
+                <a href="yuexiu/" style="color: #ffe8fe">越秀</a>
+                <a href="huadu/" style="color: #ffe8fe">花都</a>
+                <a href="liwan/" style="color: #ffe8fe">荔湾</a>
+                <a href="zengcheng/" style="color: #ffe8fe">增城</a>
+                <a href="huangpu/" style="color: #ffe8fe">黄埔</a>
+                <a href="nansha/" style="color: #ffe8fe">南沙</a>
+                <a href="conghua/" style="color: #ffe8fe">从化</a>
+            </div>
+            </fieldset>
+            <fieldset style="height: 36px">
+                <div class="housetype links" style="height: 26px;">
+                <a class="checked">户型</a>
+                <a href="一室/" style="color: #ffe8fe">一室</a>
+                <a href="二室/" style="color: #ffe8fe">两室</a>
+                <a href="三室/" style="color: #ffe8fe">三室</a>
+                <a href="四室/" style="color: #ffe8fe">四室</a>
+                <a href="四室以上/" style="color: #ffe8fe">四室以上</a>
+            </div>
+            </fieldset>
+            <fieldset style="height: 36px">
+                <div class="price links" style="height: 26px;">
+                <a class="checked">价格</a>
+                <a href="0-1000元/" style="color: #ffe8fe">0-1000元</a>
+                <a href="1000-1500元/" style="color: #ffe8fe">1000-1500元</a>
+                <a href="1500-2000元/" style="color: #ffe8fe">1500-2000元</a>
+                <a href="2000-2500元/" style="color: #ffe8fe">2000-2500元</a>
+                <a href="2500-3000元/" style="color: #ffe8fe">2500-3000元</a>
+                <a href="3000-4000元/" style="color: #ffe8fe">3000-4000元</a>
+                <a href="4000-5000元/" style="color: #ffe8fe">4000-5000元</a>
+                <a href="5000-100000元/" style="color: #ffe8fe">5000元以上</a>
+            </div>
+            </fieldset>
+            <fieldset style="height: 36px">
+                <div class="area links" style="height: 26px;">
+                <a class="checked">面积</a>
+                <a href="0-50㎡/" style="color: #ffe8fe">50㎡以下</a>
+                <a href="50-100㎡/" style="color: #ffe8fe">50-100㎡</a>
+                <a href="100-150㎡/" style="color: #ffe8fe">100-150㎡</a>
+                <a href="150-200㎡/" style="color: #ffe8fe">150-200㎡</a>
+                <a href="200-300㎡/" style="color: #ffe8fe">200-300㎡</a>
+                <a href="300-4000㎡/" style="color: #ffe8fe">300㎡以上</a>
+            </div>
+            </fieldset>
+        </div>
+        <div>
+            <div style="position: absolute;top: 27%;">
+                <img src="/static/img/house.jpg" style="width: 20px;height: 20px">
+                <div style="color: #ffe8fe;font-size: 23px;">房子总数（个）</div>
+                <div style="color: #ffe8fe;font-size: 30px">{{ house_num }}</div>
+            </div>
+            <div style="position: absolute;top: 27%;left:20%">
+                <img src="/static/img/money.jpg" style="width: 20px;height: 20px">
+                <div style="color: #ffe8fe;font-size: 23px;">平均租金（元/户/月）</div>
+                <div style="color: #ffe8fe;font-size: 30px">{{ averge_price }}</div>
+            </div>
+            <div style="position: absolute;top: 27%;left:40%">
+                <img src="/static/img/area.jpg" style="width: 20px;height: 20px">
+                <div style="color: #ffe8fe;font-size: 23px;">平均租房面积（㎡/户）</div>
+                <div style="color: #ffe8fe;font-size: 30px">{{ averge_area }}</div>
+            </div>
+        </div>
+        <div style="position: absolute;top: 300px;">
+            {{ myechart|safe }}
+        </div>
+    </div>
+</body>
+</html>

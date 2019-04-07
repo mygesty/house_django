@@ -1,0 +1,75 @@
+body{
+            background: rgba(0, 0, 0, 0.89);
+}
+
+a {
+    color: #333;
+    display: inline-block;
+    padding: .5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    line-height: 1;
+    height: 26px;
+    text-decoration: none;
+}
+
+.checked{
+    color: #f46;
+    border-color: #f46;
+    border-top-color: rgb(255, 68, 102);
+    border-right-color: rgb(255, 68, 102);
+    border-bottom-color: rgb(255, 68, 102);
+    border-left-color: rgb(255, 68, 102);
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+* {
+    box-sizing: border-box;
+}
+
+div#listing-filters {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 12px;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.65em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: inherit;
+    border-image: initial;
+}
