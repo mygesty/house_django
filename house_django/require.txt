@@ -1,0 +1,8 @@
+pyecharts
+django
+echarts-china-cities-pypkg
+echarts-china-counties-pypkg
+echarts-china-provinces-pypkg
+echarts-cities-pypkg
+echarts-countries-pypkg
+echarts-themes-pypkg
