@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ path }}</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/selecthouse.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <a class="xfull" href="/">首页</a>
+        </div>
+        <div class="house_banner fl" style="text-align: center">
+                {% for h in house %}
+				<div style="float: left;width: 300px; height: 250px">
+					<a href={{ h.houseurl }} target="_blank"><img src={{ h.imgurl }} width="180" height="130"></a>
+                    <div style="position: relative;right: 0px;color: #ffe8fe;white-space: pre-line">{{ h.zone }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       &nbsp;{{ h.housearea }}㎡</div>
+                    <div style="position: relative;left: 0px;color: #ffe8fe">{{ h.housetype }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥{{ h.price }}元</div>
+				</div>
+                {% endfor %}
+		</div>
+        <div style="position: absolute;top: 1280px;left: 29%;height: 60px;">
+            {% if first == 0 %}
+                {% for num in page_num %}
+                    {% if num != '...' %}
+                        {% if num == page %}
+                            <div style="float: left;position: relative;width: 60px;"><a href="/page/{{ num }}/" class="num" style="color: #f46;">{{ num }}</a></div>
+                        {% else %}
+                            <div style="float: left;position: relative;width: 60px;"><a href="/page/{{ num }}/" class="num" style="color: #ffe8fe;">{{ num }}</a></div>
+                        {% endif %}
+                    {% else %}
+                        <div style="float: left;position: relative;width: 60px;"><a class="num" style="color: #ffe8fe;">...</a></div>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% if page_count <= 10 %}
+                    {% for i in page %}
+                        {% if i == active_num %}
+                            <div class="active" style="float: left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
+                        {% else %}
+                            <div style="float: left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    {% for i in temp %}
+                        {% if i == active_num %}
+                            <div class="active" style="float: left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
+                        {% else %}
+                            <div style="float:left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
+                        {% endif %}
+                    {% endfor %}
+                    <div style="float: left;position: relative;width: 50px;"><a class="num" style="color: #ffe8fe;">...</a></div>
+                    <div style="float:left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{ page_count }}</a></div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

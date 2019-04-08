@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe101e5-655b-48fa-9c5e-ef5d34a15de6" name="Default Changelist" comment="" />
+    <list default="true" id="efe101e5-655b-48fa-9c5e-ef5d34a15de6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/house/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/house/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houseshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/houseshow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/houseshow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/houseshow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/houseshow/houseinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/houseshow/houseinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/houseshow/houseshow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/houseshow/houseshow.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,47 +21,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/houseshow/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/selecthouse.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="305" column="45" selection-start-line="305" selection-start-column="45" selection-end-line="305" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#1261#3165#0" />
-                <element signature="e#3276#3721#0" />
-                <element signature="e#3636#4295#0" />
-                <element signature="e#4411#16093#0" />
-                <element signature="e#6611#8300#0" />
-                <element signature="e#8414#10561#0" />
-                <element signature="e#10624#16093#0" />
-                <element signature="e#23649#29444#0" />
-                <element signature="e#29174#30655#0" />
-                <element signature="e#30854#32518#0" />
-                <element signature="e#33075#39040#0" />
-                <element signature="e#39153#45139#0" />
-                <element signature="e#45200#46891#0" />
-                <element signature="e#47040#52896#0" />
-                <element signature="e#53035#54720#0" />
-                <element signature="e#53119#53167#0" />
-                <element signature="e#56747#56795#0" />
-                <element signature="e#25591#25926#0" />
-                <element signature="e#25972#26309#0" />
-                <element signature="e#26330#27016#0" />
-                <element signature="e#27067#27352#0" />
-                <element signature="e#59556#60070#0" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/houseshow/houseinfo.html">
+        <entry file="file://$PROJECT_DIR$/selecthouse/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state relative-caret-position="761">
+              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
-                <element signature="n#style#0;n#a#2;n#div#0;n#fieldset#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
+                <element signature="e#1019#1698#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/selecthouse/selecthouse.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +65,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -88,7 +90,12 @@
       <find>bar_ploy</find>
       <find>line</find>
       <find>line_ploy</find>
+      <find>checked</find>
+      <find>listing-filters</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,15 +106,20 @@
         <option value="$PROJECT_DIR$/houseshow/templates/houseshow.css" />
         <option value="$PROJECT_DIR$/templates/houseshow.html" />
         <option value="$PROJECT_DIR$/houseshow/templates/houseshow.html" />
-        <option value="$PROJECT_DIR$/static/css/houseshow.css" />
-        <option value="$PROJECT_DIR$/house/settings.py" />
         <option value="$PROJECT_DIR$/templates/houseshow/zone.html" />
         <option value="$PROJECT_DIR$/houseshow/models.py" />
-        <option value="$PROJECT_DIR$/houseshow/urls.py" />
-        <option value="$PROJECT_DIR$/house/urls.py" />
         <option value="$PROJECT_DIR$/templates/houseshow/houseshow.html" />
+        <option value="$PROJECT_DIR$/static/css/houseshow.css" />
+        <option value="$PROJECT_DIR$/house/settings.py" />
+        <option value="$PROJECT_DIR$/templates/selecthouse/houseinfo.html" />
         <option value="$PROJECT_DIR$/templates/houseshow/houseinfo.html" />
+        <option value="$PROJECT_DIR$/houseshow/urls.py" />
         <option value="$PROJECT_DIR$/houseshow/views.py" />
+        <option value="$PROJECT_DIR$/selecthouse/urls.py" />
+        <option value="$PROJECT_DIR$/house/urls.py" />
+        <option value="$PROJECT_DIR$/static/css/selecthouse.css" />
+        <option value="$PROJECT_DIR$/selecthouse/views.py" />
+        <option value="$PROJECT_DIR$/templates/selecthouse/selecthouse.html" />
       </list>
     </option>
   </component>
@@ -116,6 +128,7 @@
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -141,8 +154,7 @@
             <path>
               <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="house_django" type="462c0819:PsiDirectoryNode" />
-              <item name="houseshow" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="selecthouse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
@@ -153,18 +165,7 @@
               <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="house_django" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="house_django" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="house_django" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="houseshow" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,15 +184,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\THINK\Documents\bishe\house_django\static\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\THINK\Documents\bishe\house_django\static" />
       <recent name="C:\Users\THINK\Documents\bishe\house_django\templates\houseshow\css" />
       <recent name="C:\Users\THINK\Documents\bishe\house_django" />
       <recent name="C:\Users\THINK\Documents\bishe\house_django\houseshow\templates\houseshow" />
       <recent name="C:\Users\THINK\Documents\bishe\house_django\houseshow\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\THINK\Documents\bishe\house_django\templates\selecthouse" />
+      <recent name="C:\Users\THINK\Documents\bishe\house_django\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,14 +276,20 @@
       <workItem from="1554512145061" duration="13571000" />
       <workItem from="1554557372779" duration="16648000" />
       <workItem from="1554597660289" duration="27997000" />
+      <workItem from="1554650314431" duration="3379000" />
+      <workItem from="1554654499334" duration="5697000" />
+      <workItem from="1554688118807" duration="7766000" />
+      <workItem from="1554701025451" duration="15729000" />
+      <workItem from="1554730852126" duration="17562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213151000" />
+    <option name="totallyTimeSpent" value="263284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.14977308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -296,9 +304,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49848714" visible="true" weight="0.23348695" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.31643626" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.12903225" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.2923077" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.37846154" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.28153846" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,13 +323,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/houseshow/templates/test.css" />
-    <entry file="file://$PROJECT_DIR$/static/css/houseshow.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1532">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/houseshow/test.html" />
     <entry file="file://$PROJECT_DIR$/templates/houseshow/backgroud.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/houseshow/zone.html" />
@@ -355,89 +356,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/house/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/house/urls.py">
+    <entry file="file://$PROJECT_DIR$/house/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#629#670#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="127" column="36" lean-forward="true" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/houseshow/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/css/houseshow.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="67" column="8" selection-end-line="122" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/selecthouse/houseinfo.html" />
     <entry file="file://$PROJECT_DIR$/templates/houseshow/houseshow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1257">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+        <state relative-caret-position="2403">
+          <caret line="89" column="65" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="65" />
           <folding>
-            <element signature="n#style#0;n#a#1;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#4;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#5;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#6;n#div#0;n#fieldset#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/houseshow/houseinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="162">
+          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/houseshow/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#a#2;n#div#0;n#fieldset#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#629#670#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/houseshow/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="305" column="45" selection-start-line="305" selection-start-column="45" selection-end-line="305" selection-end-column="45" />
+        <state relative-caret-position="945">
+          <caret line="1017" column="26" lean-forward="true" selection-start-line="1017" selection-start-column="26" selection-end-line="1017" selection-end-column="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#1261#3165#0" />
-            <element signature="e#3276#3721#0" />
-            <element signature="e#3636#4295#0" />
-            <element signature="e#4411#16093#0" />
-            <element signature="e#6611#8300#0" />
-            <element signature="e#8414#10561#0" />
-            <element signature="e#10624#16093#0" />
-            <element signature="e#23649#29444#0" />
-            <element signature="e#29174#30655#0" />
-            <element signature="e#30854#32518#0" />
-            <element signature="e#33075#39040#0" />
-            <element signature="e#39153#45139#0" />
-            <element signature="e#45200#46891#0" />
-            <element signature="e#47040#52896#0" />
-            <element signature="e#53035#54720#0" />
-            <element signature="e#53119#53167#0" />
-            <element signature="e#56747#56795#0" />
-            <element signature="e#25591#25926#0" />
-            <element signature="e#25972#26309#0" />
-            <element signature="e#26330#27016#0" />
-            <element signature="e#27067#27352#0" />
-            <element signature="e#59556#60070#0" />
+            <element signature="e#321#511#0" />
+            <element signature="e#1341#3243#0" />
+            <element signature="e#4725#57949#0" />
+            <element signature="e#58038#58520#0" />
+            <element signature="e#58572#58907#0" />
+            <element signature="e#58953#59290#0" />
+            <element signature="e#59311#59997#0" />
+            <element signature="e#60048#60333#0" />
+            <element signature="e#61359#61705#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selecthouse/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/selecthouse.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selecthouse/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#1019#1698#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/selecthouse/selecthouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

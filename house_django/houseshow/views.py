@@ -74,7 +74,7 @@ def houseinfo(request):
     path = request.path
     house_info = path_resolute(path)
     (house_num, averge_price, averge_area) = count_num(house_info)
-
+    info = add_session(path)
     template = loader.get_template('houseshow/houseinfo.html')
     multi = multiploy(house_info)
     context = dict(
@@ -85,6 +85,10 @@ def houseinfo(request):
         house_num=house_num,
         averge_price=averge_price,
         averge_area=averge_area,
+        zone=info['zone'],
+        housetype=info['housetype'],
+        price=info['price'],
+        area=info['area'],
     )
     return HttpResponse(template.render(context, request))
 
@@ -942,6 +946,7 @@ def bar_ploy(name, attr, values, title_pos="", title_top="", xname="", yname="")
             )
     return bar
 
+
 def line_ploy(name, attr, values,title_pos):
     line = Line(title=name, title_pos=title_pos)
     line.add("",
@@ -1008,7 +1013,8 @@ def value_to_percentage(values:list)->list:
         value_temp.append(v_list)
     return value_temp
 
-def count_num(house_info:list)->tuple:
+
+def count_num(house_info: list)->tuple:
     house = Zufang.objects
     for idx, info in enumerate(house_info):
         if idx==0 and len(info):
@@ -1031,3 +1037,20 @@ def count_num(house_info:list)->tuple:
     averge_price = int(house.aggregate(Avg('price'))['price__avg'])
     averge_area = int(house.aggregate(Avg('housearea'))['housearea__avg'])
     return (house_num, averge_price, averge_area)
+
+
+def add_session(path: str)->dict:
+    li = path_resolute(path)
+    info = {'zone': '',
+            'housetype': '',
+            'price': '',
+            'area': ''}
+    if len(li[0]):
+        info['zone'] = li[0]
+    if len(li[1]):
+        info['price'] = li[1][1]
+    if len(li[2]):
+        info['area'] = li[2][1]
+    if len(li[3]):
+        info['housetype'] = li[3]
+    return info

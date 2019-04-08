@@ -64,24 +64,6 @@ a {
     text-decoration-color: initial;
 }
 
-.showall {
-    color: #d5ff44;
-    border-color: #ffd344;
-    border-top-color: rgb(251, 255, 68);
-    border-right-color: rgb(251, 255, 68);
-    border-bottom-color: rgb(251, 255, 68);
-    border-left-color: rgb(251, 255, 68);
-    text-decoration: none;
-    text-decoration-line: none;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-    line-height: 0.4;
-    border-left-width: 0.5px;
-    border-right-width: 0.5px;
-    border-top-width: 0.5px;
-    border-bottom-width:0.5px;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -95,12 +77,6 @@ div#listing-filters {
 a.xfull {
     margin-bottom: 1em;
     font-size: 12px;
-    margin-inline-start: 3px;
-}
-
-a.showall {
-    margin-bottom: 1em;
-    font-size: 18px;
     margin-inline-start: 3px;
 }
 
@@ -118,5 +94,15 @@ fieldset {
     border-image: initial;
 }
 
-.blue{background-color:blue;}
+.num{
+    color: #f46;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid #f46;
+    margin-left: .5em;
+    margin-bottom: 1em;
+}
 
+.active{
+    color: #f46;
+}
