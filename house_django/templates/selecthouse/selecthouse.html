@@ -46,13 +46,13 @@
                 {% else %}
                     {% for i in temp %}
                         {% if i == active_num %}
-                            <div class="active" style="float: left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
+                            <div style="float: left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #f46;">{{i}}</a></div>
                         {% else %}
                             <div style="float:left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{i}}</a></div>
                         {% endif %}
                     {% endfor %}
                     <div style="float: left;position: relative;width: 50px;"><a class="num" style="color: #ffe8fe;">...</a></div>
-                    <div style="float:left;position: relative;width: 50px;"><a href="/page/{{ i }}/" class="num" style="color: #ffe8fe;">{{ page_count }}</a></div>
+                    <div style="float:left;position: relative;width: 50px;"><a href="/page/{{ page_count }}/" class="num" style="color: #ffe8fe;">{{ page_count }}</a></div>
                 {% endif %}
             {% endif %}
         </div>
