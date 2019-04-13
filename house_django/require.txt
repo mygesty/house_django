@@ -1,4 +1,5 @@
 pyecharts
+mysqlclient
 django
 echarts-china-cities-pypkg
 echarts-china-counties-pypkg
