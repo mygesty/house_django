@@ -1,0 +1,53 @@
+#sub-header a {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px
+}
+
+#sub-header a.active,#sub-header a:hover {
+    color: #ff4466;
+}
+
+
+
+.changeCityList {
+    float: left;
+    width: 100px;
+    height: 50px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    top: -12px;
+    left: -57px;
+    z-index: 2
+}
+
+.changeCityList dt span {
+    background: url(/static/img/city.png) no-repeat right bottom;
+    display: inline-block;
+    width: 60px;
+    line-height: 20px
+}
+
+.changeCityList dd {
+    background: rgb(142,44,44);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    vertical-align: middle;
+    width: 50%;
+    display: none;
+}
+
+#sub-header .changeCityList dd a {
+    display: block;
+    /*line-height: 35px;*/
+    position: relative
+}
+
+
+#sub-header .changeCityList:hover dd {
+    display: block
+}

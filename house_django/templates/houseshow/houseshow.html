@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>广州租房</title>
+    <title>{{ city }}租房</title>
     {% for jsfile_name in script_list %}
     <script src="{{host}}/{{jsfile_name}}.js"></script>
     {% endfor %}
     <link rel="shortcut icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/static/css/houseshow.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/citylist.css">
 </head>
 <body>
     <div>
@@ -41,60 +42,65 @@
             </div>
         </div>
         <div>
-            <a class="xfull" href="/">首页</a>
+            <div>
+                <a class="xfull" href="/">首页</a>
+            </div>
+            <div id="sub-header" style="position: absolute;left: 80px;top: 0px;">
+                <dl class="changeCityList">
+                    <dt><span id="curCityName" style="color: #ffe8fe">{{ city }}</span></dt>
+                    <dd>
+                        {% for i in city_list %}
+                            <a href="/city{{ i }}/" class="bor" style="color: #ffe8fe;">{{ i }}</a>
+                        {% endfor %}
+                    </dd>
+                </dl>
+            </div>
         </div>
-        <div id="listing-filters" class="compat open" style="position: absolute;left: 0px; top: 25px; width: 60%">
+        <div id="listing-filters" class="compat open" style="position: absolute;left: 0px; top: 30px; width: 60%">
             <fieldset style="height: 36px">
                 <div class="zone links" style="height: 26px;">
                 <a class="checked">区域</a>
-                <a href="tianhe/" style="color: #ffe8fe">天河</a>
-                <a href="baiyun/" style="color: #ffe8fe">白云</a>
-                <a href="panyu/" style="color: #ffe8fe">番禺</a>
-                <a href="haizhu/" style="color: #ffe8fe">海珠</a>
-                <a href="yuexiu/" style="color: #ffe8fe">越秀</a>
-                <a href="huadu/" style="color: #ffe8fe">花都</a>
-                <a href="liwan/" style="color: #ffe8fe">荔湾</a>
-                <a href="zengcheng/" style="color: #ffe8fe">增城</a>
-                <a href="huangpu/" style="color: #ffe8fe">黄埔</a>
-                <a href="nansha/" style="color: #ffe8fe">南沙</a>
-                <a href="conghua/" style="color: #ffe8fe">从化</a>
+                {% for i in zone_list %}
+                    <a href="{{ i }}info/" style="color: #ffe8fe">{{ i }}</a>
+                {% endfor %}
             </div>
             </fieldset>
             <fieldset style="height: 36px">
                 <div class="housetype links" style="height: 26px;">
                 <a class="checked">户型</a>
-                <a href="一室/" style="color: #ffe8fe">一室</a>
-                <a href="二室/" style="color: #ffe8fe">两室</a>
-                <a href="三室/" style="color: #ffe8fe">三室</a>
-                <a href="四室/" style="color: #ffe8fe">四室</a>
-                <a href="五室/" style="color: #ffe8fe">四室以上</a>
+                <a href="yishiinfo/" style="color: #ffe8fe">一室</a>
+                <a href="eshiinfo/" style="color: #ffe8fe">两室</a>
+                <a href="sanshiinfo/" style="color: #ffe8fe">三室</a>
+                <a href="sishiinfo/" style="color: #ffe8fe">四室</a>
+                <a href="wushiinfo/" style="color: #ffe8fe">四室以上</a>
             </div>
             </fieldset>
             <fieldset style="height: 36px">
                 <div class="price links" style="height: 26px;">
                 <a class="checked">价格</a>
-                <a href="0-1000元/" style="color: #ffe8fe">0-1000元</a>
-                <a href="1000-1500元/" style="color: #ffe8fe">1000-1500元</a>
-                <a href="1500-2000元/" style="color: #ffe8fe">1500-2000元</a>
-                <a href="2000-2500元/" style="color: #ffe8fe">2000-2500元</a>
-                <a href="2500-3000元/" style="color: #ffe8fe">2500-3000元</a>
-                <a href="3000-4000元/" style="color: #ffe8fe">3000-4000元</a>
-                <a href="4000-5000元/" style="color: #ffe8fe">4000-5000元</a>
-                <a href="5000-100000元/" style="color: #ffe8fe">5000元以上</a>
+                <a href="0-1000元info/" style="color: #ffe8fe">0-1000元</a>
+                <a href="1000-1500元info/" style="color: #ffe8fe">1000-1500元</a>
+                <a href="1500-2000元info/" style="color: #ffe8fe">1500-2000元</a>
+                <a href="2000-2500元info/" style="color: #ffe8fe">2000-2500元</a>
+                <a href="2500-3000元info/" style="color: #ffe8fe">2500-3000元</a>
+                <a href="3000-4000元info/" style="color: #ffe8fe">3000-4000元</a>
+                <a href="4000-5000元info/" style="color: #ffe8fe">4000-5000元</a>
+                <a href="5000-100000元info/" style="color: #ffe8fe">5000元以上</a>
             </div>
             </fieldset>
             <fieldset style="height: 36px">
                 <div class="area links" style="height: 26px;">
                 <a class="checked">面积</a>
-                <a href="0-50㎡/" style="color: #ffe8fe">50㎡以下</a>
-                <a href="50-100㎡/" style="color: #ffe8fe">50-100㎡</a>
-                <a href="100-150㎡/" style="color: #ffe8fe">100-150㎡</a>
-                <a href="150-200㎡/" style="color: #ffe8fe">150-200㎡</a>
-                <a href="200-300㎡/" style="color: #ffe8fe">200-300㎡</a>
-                <a href="300-4000㎡/" style="color: #ffe8fe">300㎡以上</a>
+                <a href="0-50㎡info/" style="color: #ffe8fe">50㎡以下</a>
+                <a href="50-100㎡info/" style="color: #ffe8fe">50-100㎡</a>
+                <a href="100-150㎡info/" style="color: #ffe8fe">100-150㎡</a>
+                <a href="150-200㎡info/" style="color: #ffe8fe">150-200㎡</a>
+                <a href="200-300㎡info/" style="color: #ffe8fe">200-300㎡</a>
+                <a href="300-4000㎡info/" style="color: #ffe8fe">300㎡以上</a>
             </div>
             </fieldset>
         </div>
+
     </div>
 </body>
 </html>

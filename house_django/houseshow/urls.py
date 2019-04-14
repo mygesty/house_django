@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^', views.houseinfo),
+    url(r'info/$', views.houseinfo),
+    url(r'^city', views.index),
 ]

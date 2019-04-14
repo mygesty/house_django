@@ -2,110 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>广州租房</title>
+    <title>{{ city }}租房</title>
     {% for jsfile_name in script_list %}
     <script src="{{host}}/{{jsfile_name}}.js"></script>
     {% endfor %}
     <link rel="shortcut icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/static/css/houseshow.css">
-
+    <link rel="stylesheet" type="text/css" href="/static/css/citylist.css">
 </head>
 <body>
     <div>
         <div>
             <a class="xfull" href="/">首页</a>
         </div>
+        <div id="sub-header" style="position: absolute;left: 80px;top: 0px;">
+            <dl class="changeCityList">
+                <dt><span id="curCityName" style="color: #ffe8fe">{{ city }}</span></dt>
+                <dd>
+                    <a href="/city广州/" class="bor" style="color: #ffe8fe;">广州<b><s class="ani"></s></b></a>
+                    <a href="/city深圳/" class="bor" style="color: #ffe8fe;">深圳<b><s class="ani"></s></b></a>
+                </dd>
+            </dl>
+        </div>
         <div style="position: absolute; top: 40px;left: 60%;">
             <a class="showall" href="selecthouse/">点击选房</a>
         </div>
-        <div id="listing-filters" class="compat open" style="position: absolute;left: 0px; top: 25px; width: 60%">
+        <div id="listing-filters" class="compat open" style="position: absolute;left: 0px; top: 30px; width: 60%">
             <fieldset style="height: 36px">
                 <div class="links" style="height: 26px;">
                 <a class="checked">区域</a>
-                {% if zone == 'tianhe' %}
-                    <a class="checked" href="tianhe/" style="color: #ffe8fe">天河</a>
-                {% else %}
-                    <a href="tianhe/" style="color: #ffe8fe">天河</a>
-                {% endif %}
-                {% if zone == 'baiyun' %}
-                    <a class="checked" href="baiyun/" style="color: #ffe8fe">白云</a>
-                {% else %}
-                    <a href="baiyun/" style="color: #ffe8fe">白云</a>
-                {% endif %}
-                {% if zone == 'panyu' %}
-                    <a class="checked" href="panyu/" style="color: #ffe8fe">番禺</a>
-                {% else %}
-                    <a href="panyu/" style="color: #ffe8fe">番禺</a>
-                {% endif %}
-                {% if zone == 'haizhu' %}
-                    <a class="checked" href="haizhu/" style="color: #ffe8fe">海珠</a>
-                {% else %}
-                    <a href="haizhu/" style="color: #ffe8fe">海珠</a>
-                {% endif %}
-                {% if zone == 'yuexiu' %}
-                    <a class="checked" href="yuexiu/" style="color: #ffe8fe">越秀</a>
-                {% else %}
-                    <a href="yuexiu/" style="color: #ffe8fe">越秀</a>
-                {% endif %}
-                {% if zone == 'huadu' %}
-                    <a class="checked" href="huadu/" style="color: #ffe8fe">花都</a>
-                {% else %}
-                    <a href="huadu/" style="color: #ffe8fe">花都</a>
-                {% endif %}
-                {% if zone == 'liwan' %}
-                    <a class="checked" href="liwan/" style="color: #ffe8fe">荔湾</a>
-                {% else %}
-                    <a href="liwan/" style="color: #ffe8fe">荔湾</a>
-                {% endif %}
-                {% if zone == 'zengcheng' %}
-                    <a class="checked" href="zengcheng/" style="color: #ffe8fe">增城</a>
-                {% else %}
-                    <a href="zengcheng/" style="color: #ffe8fe">增城</a>
-                {% endif %}
-                {% if zone == 'huangpu' %}
-                    <a class="checked" href="huangpu/" style="color: #ffe8fe">黄埔</a>
-                {% else %}
-                    <a href="huangpu/" style="color: #ffe8fe">黄埔</a>
-                {% endif %}
-                {% if zone == 'nansha' %}
-                    <a class="checked" href="nansha/" style="color: #ffe8fe">南沙</a>
-                {% else %}
-                    <a href="nansha/" style="color: #ffe8fe">南沙</a>
-                {% endif %}
-                {% if zone == 'conghua' %}
-                    <a class="checked" href="conghua/" style="color: #ffe8fe">从化</a>
-                {% else %}
-                    <a href="conghua/" style="color: #ffe8fe">从化</a>
-                {% endif %}
+                {% for i in zone_list %}
+                    {% if i == zone %}
+                    <a class="checked" href="{{ i }}info/" style="color: #ffe8fe">{{ i }}</a>
+                    {% else %}
+                        <a href="{{ i }}info/" style="color: #ffe8fe">{{ i }}</a>
+                    {% endif %}
+                {% endfor %}
             </div>
             </fieldset>
             <fieldset style="height: 36px">
                 <div class="links" style="height: 26px;">
                 <a class="checked">户型</a>
                 {% if housetype == '一室' %}
-                    <a class="checked" href="一室/" style="color: #ffe8fe">一室</a>
+                    <a class="checked" href="yishiinfo/" style="color: #ffe8fe">一室</a>
                 {% else %}
-                    <a href="一室/" style="color: #ffe8fe">一室</a>
+                    <a href="yishiinfo/" style="color: #ffe8fe">一室</a>
                 {% endif %}
                 {% if housetype == '二室' %}
-                    <a class="checked" href="二室/" style="color: #ffe8fe">二室</a>
+                    <a class="checked" href="eshiinfo/" style="color: #ffe8fe">二室</a>
                 {% else %}
-                    <a href="二室/" style="color: #ffe8fe">二室</a>
+                    <a href="eshiinfo/" style="color: #ffe8fe">二室</a>
                 {% endif %}
                 {% if housetype == '三室' %}
-                    <a class="checked" href="三室/" style="color: #ffe8fe">三室</a>
+                    <a class="checked" href="sanshiinfo/" style="color: #ffe8fe">三室</a>
                 {% else %}
-                    <a href="三室/" style="color: #ffe8fe">三室</a>
+                    <a href="sanshiinfo/" style="color: #ffe8fe">三室</a>
                 {% endif %}
                 {% if housetype == '四室' %}
-                    <a class="checked" href="四室/" style="color: #ffe8fe">四室</a>
+                    <a class="checked" href="sishiinfo/" style="color: #ffe8fe">四室</a>
                 {% else %}
-                    <a href="四室/" style="color: #ffe8fe">四室</a>
+                    <a href="sishiinfo/" style="color: #ffe8fe">四室</a>
                 {% endif %}
                 {% if housetype == '四室以上' %}
-                    <a class="checked" href="四室以上/" style="color: #ffe8fe">四室以上</a>
+                    <a class="checked" href="wushiinfo/" style="color: #ffe8fe">四室以上</a>
                 {% else %}
-                    <a href="四室以上/" style="color: #ffe8fe">四室以上</a>
+                    <a href="wushiinfo/" style="color: #ffe8fe">四室以上</a>
                 {% endif %}
             </div>
             </fieldset>
@@ -113,44 +74,44 @@
                 <div class="links" style="height: 26px;">
                 <a class="checked">价格</a>
                 {% if price == '1000' %}
-                    <a class="checked" href="0-1000元/" style="color: #ffe8fe">0-1000元</a>
+                    <a class="checked" href="0-1000元info/" style="color: #ffe8fe">0-1000元</a>
                 {% else %}
-                    <a href="0-1000元/" style="color: #ffe8fe">0-1000元</a>
+                    <a href="0-1000元info/" style="color: #ffe8fe">0-1000元</a>
                 {% endif %}
                 {% if price == '1500' %}
-                    <a class="checked" href="1000-1500元/" style="color: #ffe8fe">1000-1500元</a>
+                    <a class="checked" href="1000-1500元info/" style="color: #ffe8fe">1000-1500元</a>
                 {% else %}
-                    <a href="1000-1500元/" style="color: #ffe8fe">1000-1500元</a>
+                    <a href="1000-1500元info/" style="color: #ffe8fe">1000-1500元</a>
                 {% endif %}
                 {% if price == '2000' %}
-                    <a class="checked" href="1500-2000元/" style="color: #ffe8fe">1500-2000元</a>
+                    <a class="checked" href="1500-2000元info/" style="color: #ffe8fe">1500-2000元</a>
                 {% else %}
-                    <a href="1500-2000元/" style="color: #ffe8fe">1500-2000元</a>
+                    <a href="1500-2000元info/" style="color: #ffe8fe">1500-2000元</a>
                 {% endif %}
                 {% if price == '2500' %}
-                    <a class="checked" href="2000-2500元/" style="color: #ffe8fe">2000-2500元</a>
+                    <a class="checked" href="2000-2500元info/" style="color: #ffe8fe">2000-2500元</a>
                 {% else %}
-                    <a href="2000-2500元/" style="color: #ffe8fe">2000-2500元</a>
+                    <a href="2000-2500元info/" style="color: #ffe8fe">2000-2500元</a>
                 {% endif %}
                 {% if price == '3000' %}
-                    <a class="checked" href="2500-3000元/" style="color: #ffe8fe">2500-3000元</a>
+                    <a class="checked" href="2500-3000元info/" style="color: #ffe8fe">2500-3000元</a>
                 {% else %}
-                    <a href="2500-3000元/" style="color: #ffe8fe">2500-3000元</a>
+                    <a href="2500-3000元info/" style="color: #ffe8fe">2500-3000元</a>
                 {% endif %}
                 {% if price == '4000' %}
-                    <a class="checked" href="3000-4000元/" style="color: #ffe8fe">3000-4000元</a>
+                    <a class="checked" href="3000-4000元info/" style="color: #ffe8fe">3000-4000元</a>
                 {% else %}
-                    <a href="3000-4000元/" style="color: #ffe8fe">3000-4000元</a>
+                    <a href="3000-4000元info/" style="color: #ffe8fe">3000-4000元</a>
                 {% endif %}
                 {% if price == '5000' %}
-                    <a class="checked" href="4000-5000元/" style="color: #ffe8fe">4000-5000元</a>
+                    <a class="checked" href="4000-5000元info/" style="color: #ffe8fe">4000-5000元</a>
                 {% else %}
-                    <a href="4000-5000元/" style="color: #ffe8fe">4000-5000元</a>
+                    <a href="4000-5000元info/" style="color: #ffe8fe">4000-5000元</a>
                 {% endif %}
                 {% if price == '100000' %}
-                    <a class="checked" href="5000-100000元/" style="color: #ffe8fe">5000-100000元</a>
+                    <a class="checked" href="5000-100000元info/" style="color: #ffe8fe">5000-100000元</a>
                 {% else %}
-                    <a href="5000-100000元/" style="color: #ffe8fe">5000-100000元</a>
+                    <a href="5000-100000元info/" style="color: #ffe8fe">5000-100000元</a>
                 {% endif %}
             </div>
             </fieldset>
@@ -158,34 +119,34 @@
                 <div class="links" style="height: 26px;">
                 <a class="checked">面积</a>
                 {% if area == '50' %}
-                    <a class="checked" href="0-50㎡/" style="color: #ffe8fe">50㎡以下</a>
+                    <a class="checked" href="0-50㎡info/" style="color: #ffe8fe">50㎡以下</a>
                 {% else %}
-                    <a href="0-50㎡/" style="color: #ffe8fe">50㎡以下</a>
+                    <a href="0-50㎡info/" style="color: #ffe8fe">50㎡以下</a>
                 {% endif %}
                 {% if area == '100' %}
-                    <a class="checked" href="50-100㎡/" style="color: #ffe8fe">50-100㎡</a>
+                    <a class="checked" href="50-100㎡info/" style="color: #ffe8fe">50-100㎡</a>
                 {% else %}
-                    <a href="50-100㎡/" style="color: #ffe8fe">50-100㎡</a>
+                    <a href="50-100㎡info/" style="color: #ffe8fe">50-100㎡</a>
                 {% endif %}
                 {% if area == '150' %}
-                    <a class="checked" href="100-150㎡/" style="color: #ffe8fe">100-150㎡</a>
+                    <a class="checked" href="100-150㎡info/" style="color: #ffe8fe">100-150㎡</a>
                 {% else %}
-                    <a href="100-150㎡/" style="color: #ffe8fe">100-150㎡</a>
+                    <a href="100-150㎡info/" style="color: #ffe8fe">100-150㎡</a>
                 {% endif %}
                 {% if area == '200' %}
-                    <a class="checked" href="150-200㎡/" style="color: #ffe8fe">150-200㎡</a>
+                    <a class="checked" href="150-200㎡info/" style="color: #ffe8fe">150-200㎡</a>
                 {% else %}
-                    <a href="150-200㎡/" style="color: #ffe8fe">150-200㎡</a>
+                    <a href="150-200㎡info/" style="color: #ffe8fe">150-200㎡</a>
                 {% endif %}
                 {% if area == '300' %}
-                    <a class="checked" href="200-300㎡/" style="color: #ffe8fe">200-300㎡</a>
+                    <a class="checked" href="200-300㎡info/" style="color: #ffe8fe">200-300㎡</a>
                 {% else %}
-                    <a href="200-300㎡/" style="color: #ffe8fe">200-300㎡</a>
+                    <a href="200-300㎡info/" style="color: #ffe8fe">200-300㎡</a>
                 {% endif %}
                 {% if area == '4000' %}
-                    <a class="checked" href="300-4000㎡/" style="color: #ffe8fe">300㎡以上</a>
+                    <a class="checked" href="300-4000㎡info/" style="color: #ffe8fe">300㎡以上</a>
                 {% else %}
-                    <a href="300-4000㎡/" style="color: #ffe8fe">300㎡以上</a>
+                    <a href="300-4000㎡info/" style="color: #ffe8fe">300㎡以上</a>
                 {% endif %}
             </div>
             </fieldset>

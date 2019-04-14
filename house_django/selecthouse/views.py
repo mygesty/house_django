@@ -1,4 +1,4 @@
-from houseshow.views import path_resolute, zone_map, room_map2
+from houseshow.views import path_resolute, city_zone, room_map2
 from houseshow.models import Zufang
 from django.http import HttpResponse
 from django.template import loader
@@ -7,7 +7,7 @@ from django.template import loader
 
 
 def selecthouse(request):
-    house = house_resolute(request.path)
+    house, city = house_resolute(request.path)
     request.session['path'] = request.path
     template = loader.get_template('selecthouse/selecthouse.html')
     count = house.count()
@@ -19,12 +19,14 @@ def selecthouse(request):
         temp=range(1, 9),
         active_num=1,
         first=1,
+        city=city,
     )
     return HttpResponse(template.render(context, request))
 
+
 def choose_page(request, page):
     page = int(page)
-    house = house_resolute(request.session['path'])
+    house, city = house_resolute(request.session['path'])
     template = loader.get_template("selecthouse/selecthouse.html")
     page_count = house.count() // 20 + 1
     bias_first = page - 1
@@ -71,6 +73,7 @@ def choose_page(request, page):
         page=str(page),
         page_num=page_num,
         first=0,
+        city=city,
     )
     return HttpResponse(template.render(context, request))
 
@@ -80,7 +83,7 @@ def house_resolute(path):
     house = Zufang.objects
     for idx, info in enumerate(house_info):
         if idx == 0 and len(info):
-            house = house.filter(zone=zone_map[info])
+            house = house.filter(zone=info)
         elif idx == 1 and len(info):
             house = house.filter(price__gte=info[0]).filter(price__lt=info[1])
         elif idx == 2 and len(info):
@@ -90,4 +93,7 @@ def house_resolute(path):
                 house = house.filter(housenum=room_map2[info])
             else:
                 house = house.filter(housenum__gt=4)
-    return house
+        elif idx == 4 and len(info):
+            house = house.filter(city=info)
+            city = info
+    return house, city

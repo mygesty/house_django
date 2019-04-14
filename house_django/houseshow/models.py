@@ -17,7 +17,9 @@ class Zufang(models.Model):
     price = models.PositiveSmallIntegerField()
     housearea = models.PositiveSmallIntegerField()
     per_price = models.PositiveIntegerField()
+    city = models.CharField(max_length=10)
 
     class Meta:
-        managed = True
+        managed = False
         db_table = 'zufang'
+
