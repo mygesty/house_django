@@ -1,0 +1,5 @@
+1.cd house_dango   #进入house_django
+2.pip install -r require.txt  #安装程序所需的程序包，包括python操作mysql数据库所需的环境以及数据可视化的地图包。
+3.yum install mysql-devel    #安装数据库开发环境，否则python包mysqlclient安装不了
+4.cd house_django
+5.python manage.py runserver 0.0.0.0:8000 &
