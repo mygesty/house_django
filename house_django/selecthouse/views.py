@@ -81,6 +81,7 @@ def choose_page(request, page):
 def house_resolute(path):
     house_info = path_resolute(path.replace('selecthouse/', ''))
     house = Zufang.objects
+    city = ''
     for idx, info in enumerate(house_info):
         if idx == 0 and len(info):
             house = house.filter(zone=info)

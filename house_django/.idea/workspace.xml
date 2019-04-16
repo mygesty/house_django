@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="efe101e5-655b-48fa-9c5e-ef5d34a15de6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/house/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseshow/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseshow/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/houseshow/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/houseshow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/houseshow/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/houseshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/houseshow/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selecthouse/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/selecthouse/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/houseshow/houseinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/houseshow/houseinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/houseshow/houseshow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/houseshow/houseshow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/selecthouse/selecthouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/selecthouse/selecthouse.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,61 +20,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/houseshow/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="127">
+              <caret line="55" column="82" selection-start-line="55" selection-start-column="82" selection-end-line="55" selection-end-column="82" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#5411#6312#0" />
-                <element signature="e#6358#59376#0" />
-                <element signature="e#59465#59947#0" />
-                <element signature="e#59999#60334#0" />
-                <element signature="e#60380#60717#0" />
-                <element signature="e#60744#61403#0" />
-                <element signature="e#61455#61740#0" />
-                <element signature="e#61798#62806#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/houseshow/houseinfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#dt#0;n#dl#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/houseshow/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/houseshow/houseshow.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#dt#0;n#dl#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#fieldset#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#fieldset#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#fieldset#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#fieldset#3;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#310#405#0" />
+                <element signature="e#6639#61079#0" />
+                <element signature="e#61702#62037#0" />
               </folding>
             </state>
           </provider>
@@ -154,16 +99,16 @@
         <option value="$PROJECT_DIR$/static/css/citylist.css" />
         <option value="$PROJECT_DIR$/houseshow/models.py" />
         <option value="$PROJECT_DIR$/house/urls.py" />
-        <option value="$PROJECT_DIR$/selecthouse/views.py" />
         <option value="$PROJECT_DIR$/templates/selecthouse/selecthouse.html" />
         <option value="$PROJECT_DIR$/templates/houseshow/houseinfo.html" />
-        <option value="$PROJECT_DIR$/houseshow/views.py" />
         <option value="$PROJECT_DIR$/templates/houseshow/houseshow.html" />
         <option value="$PROJECT_DIR$/houseshow/urls.py" />
+        <option value="$PROJECT_DIR$/selecthouse/views.py" />
+        <option value="$PROJECT_DIR$/houseshow/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -174,6 +119,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house_django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="house_django" type="462c0819:PsiDirectoryNode" />
+              <item name="houseshow" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -212,22 +173,6 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="houseshow" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="house_django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="house_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="house_django" type="462c0819:PsiDirectoryNode" />
-              <item name="houseshow" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,17 +294,19 @@
       <workItem from="1555150030470" duration="2365000" />
       <workItem from="1555153060054" duration="10818000" />
       <workItem from="1555166687760" duration="16105000" />
-      <workItem from="1555205555123" duration="7629000" />
+      <workItem from="1555205555123" duration="9216000" />
+      <workItem from="1555229297558" duration="23000" />
+      <workItem from="1555314529027" duration="986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304693000" />
+    <option name="totallyTimeSpent" value="307289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15128593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15128593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,7 +319,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.45846155" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.21076924" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.37846154" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.22923078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -490,13 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selecthouse/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/selecthouse/selecthouse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -504,25 +444,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/houseshow/houseshow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#dt#0;n#dl#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#3;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/houseshow/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="162">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -530,31 +454,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/selecthouse/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="86" column="43" lean-forward="true" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/houseshow/houseinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="546">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#dt#0;n#dl#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/houseshow/houseshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/houseshow/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="127">
+          <caret line="55" column="82" selection-start-line="55" selection-start-column="82" selection-end-line="55" selection-end-column="82" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#5411#6312#0" />
-            <element signature="e#6358#59376#0" />
-            <element signature="e#59465#59947#0" />
-            <element signature="e#59999#60334#0" />
-            <element signature="e#60380#60717#0" />
-            <element signature="e#60744#61403#0" />
-            <element signature="e#61455#61740#0" />
-            <element signature="e#61798#62806#0" />
+            <element signature="e#310#405#0" />
+            <element signature="e#6639#61079#0" />
+            <element signature="e#61702#62037#0" />
           </folding>
         </state>
       </provider>

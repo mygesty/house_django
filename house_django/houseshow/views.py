@@ -52,7 +52,10 @@ def index(request):
     attr_zone = city_zone[city]
     values_zone = [Zufang.objects.filter(city=city).filter(zone=i).count() for i in attr_zone]
     width = 600
-    pie_zone = pie(attr_zone, values_zone, width, ["61%", "50%"])    # 显示房子在各区的分布情况，比例
+    if city=='深圳':
+        pie_zone = pie(attr_zone, values_zone, 900, ["70%", "50%"], legend_pos="18%")    # 显示房子在各区的分布情况，比例
+    else:
+        pie_zone = pie(attr_zone, values_zone, width, ["61%", "50%"])    # 显示房子在各区的分布情况，比例
 
     housetype = ["1室", "2室", "3室", "4室"]
     values_housetype = [Zufang.objects.filter(city=city).filter(housetype__regex="^\d+室").filter(housetype__contains=i).count() for i in housetype]
@@ -999,7 +1002,7 @@ def line_ploy(name, attr, values,title_pos):
     return line
 
 
-def pie(attr, values, width, center):
+def pie(attr, values, width, center, legend_pos="8%"):
 
     pie = Pie(width=width)
     pie.add("",
@@ -1008,7 +1011,7 @@ def pie(attr, values, width, center):
             is_label_show=True,
             is_toolbox_show=False,
             legend_orient="vertical",
-            legend_pos="8%",
+            legend_pos=legend_pos,
             legend_top="14%",
             legend_text_color="#ffe8fe",
             center=center,
